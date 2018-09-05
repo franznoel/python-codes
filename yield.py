@@ -36,3 +36,9 @@ print(next(gen))
 print(next(gen))
 # Output: 2
 print(next(gen))
+
+#Using next in string
+print("\nUsing next in string:")
+my_string = "Yasoob"
+my_iter = iter(my_string)
+print(next(my_iter))
