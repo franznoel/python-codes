@@ -19,3 +19,20 @@ print("\nFibonacci:")
 
 for i in fibon(25):
     print(i)
+
+
+# Using next Python function after generation
+print("\nUsing next:")
+
+def generator_function():
+    for i in range(4):
+        yield i
+
+gen = generator_function()
+print(next(gen))
+# Output: 0
+print(next(gen))
+# Output: 1
+print(next(gen))
+# Output: 2
+print(next(gen))
